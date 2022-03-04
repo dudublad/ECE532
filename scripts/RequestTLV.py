@@ -28,7 +28,7 @@ class requestType(Enum):
     Response = 0x05
 
 vax_status_dict = {
-    1: "Unvaccinates",
+    1: "Unvaccinated",
     2: "Partially Vaccinated",
     3: "Fully Vaccinated"
 }
@@ -57,7 +57,6 @@ class DBUser:
         self.lastName = lastName
         self.DoB = DoB
         self.vaxStatus = vaxStatus
-        self.UID = UID
         self.vaxDoses = vaxDoses
     
     def TlvEncode(self):
