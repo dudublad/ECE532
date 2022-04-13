@@ -31,7 +31,7 @@ Enter `ipconfig` to get the IP address, especially the station number in the com
 Suppose that you are at machine X for the FPGA client and machine Y for the FPGA server.
 
 ### FPGA 1 (Client)
-(1)	Download the file named [/VivadoProjects/FPGA_1](FPGA_1), make sure that the ip_repo folder is in the same folder as the dm_server folder, also add the sdk file in [/XilinxSDK/FPGA1](SDK) to the dm_server folder.
+(1)	Download the file named [FPGA_1](/Vivado_Projects/FPGA_1), make sure that the ip_repo folder is in the same folder as the dm_server folder, also add the sdk file in [FPGA1](/XilinxSDK/FPGA1) to the dm_server folder.
 
 (2)	Go to the dm_server folder and find demo_group.xpr, double-click to open it.
 
