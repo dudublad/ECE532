@@ -16,7 +16,16 @@ The goal of our project is to successfully implement a digital, FPGA cloud-based
 
 ## Overview of the system
 
+![image](https://user-images.githubusercontent.com/58315188/163198957-eedee0fe-36e5-492a-a286-0b1e8c22ce02.png)
 
+**There are two workflow modes for the system:**
+1.	Administrator Mode - direct access from PC to the database
+2.	Normal (Data Matrix Scanning) Mode - requires FPGA 1 to process the data and fetch corresponding information from the memory
+
+**Minimum Hardware required**:
+1. two FPGAs with one FPGA connected to DDR memory, and the other connected to VGA. Both FPGAs should be connected to the network.
+2. one PC to run the user interface script.
+The number of PCs and FPGAs with VGA can be increased without changing the structure of scripts (only adding the IP addresses).
 
 ## How to use
 
@@ -30,7 +39,7 @@ pip install pillow
 
 Enter `ipconfig` to get the IP address, especially the station number in the command prompt.
 
-Suppose that you are at machine X for the FPGA client and machine Y for the FPGA server.
+**Suppose that you are at machine X for the FPGA client and machine Y for the FPGA server.**
 
 ### FPGA 1 (Client)
 (1)	Download the file named [FPGA_1](/Vivado_Projects/FPGA_1), make sure that the ip_repo folder is in the same folder as the dm_server folder, also add the sdk file in [FPGA1](/XilinxSDK/FPGA1) to the dm_server folder.
