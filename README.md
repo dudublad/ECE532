@@ -16,6 +16,8 @@ The goal of our project is to successfully implement a digital, FPGA cloud-based
 
 ## Overview of the system
 
+
+
 ## How to use
 
 ### Requirements
@@ -85,3 +87,52 @@ Suppose that you are at machine X for the FPGA client and machine Y for the FPGA
 (4)	Close IDLE and double click on the [main_script.py](/Scripts/main_script.py) file
 
 (5)	Follow the instructions shown on the terminal
+
+## Repository Structure
+
+```
+.gitignore
+README.md
+Scripts
+   |-- TLV_Decode.py
+   |-- TLV_Encode.py
+   |-- CSV_convert.py
+   |-- database_cheatsheet.csv
+   |-- definitions.py
+   |-- main_script.py
+   |-- dm_images
+   |   |-- dm_0.png
+Vivado_Projects
+   |-- FPGA_1
+   |   |-- dm_server
+   |   |   |-- bitstream
+   |   |   |   |-- design_1_wrapper.bit
+   |   |   |   |-- design_1_wrapper.ltx
+   |   |   |-- demo_group.cache
+   |   |   |-- demo_group.hw
+   |   |   |-- demo_group.runs
+   |   |   |-- demo_group.srcs
+   |   |   |-- demo_group.xpr
+   |   |-- ip_repo
+   |   |   |-- fpga1_top_1.0
+   |   |   |-- fpga1_top_master_1.0
+   |   |   |-- fpga1_top_master_bram_1.0
+   |   |   |-- fpga1_top_slv_1.0
+   |-- FPGA2
+   |   |-- bitstreams
+   |   |-- DB_Server_Final
+   |-- FPGA1_tb
+   |   |-- proj_p3.xpr
+XilinxSDK
+   |-- FPGA1
+   |   |-- demo_group.sdk
+   |   |   |-- design_1_wrapper_hw_platform_0
+   |   |   |-- dm_server
+   |   |   |-- dm_server_bsp
+   |   |   |-- design_1_wrapper.hdf
+   |-- FPGA2
+   |   |-- DB_Test15_HW
+   |   |-- DB_Test_15_SW
+   |   |-- DB_Test_15_SW_bsp
+```
+
