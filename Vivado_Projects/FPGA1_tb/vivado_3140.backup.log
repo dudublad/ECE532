@@ -1,0 +1,500 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar  4 23:37:06 2022
+# Process ID: 3140
+# Current directory: E:/UofTCourse/ECE532/Assignment/proj3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15940 E:\UofTCourse\ECE532\Assignment\proj3\proj_p3.xpr
+# Log file: E:/UofTCourse/ECE532/Assignment/proj3/vivado.log
+# Journal file: E:/UofTCourse/ECE532/Assignment/proj3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/UofTCourse/ECE532/Assignment/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/UofTCourse/ECE532/project/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:23 . Memory (MB): peak = 833.711 ; gain = 233.422
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fpga1_top_sys_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/wait.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/title.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/number.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/access.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/font.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_4.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L xilinx_vip -prj fpga1_top_sys_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_axi_vip_1_0/sim/design_1_axi_vip_1_0_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_axi_vip_1_0/sim/design_1_axi_vip_1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_axi_vip_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.srcs/sources_1/bd/design_1/ipshared/37c2/simulation/blk_mem_gen_v8_4.v" into library blk_mem_gen_v8_4_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_4
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_axi_mem_intercon_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_1R706YB
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_3HM21E
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_7HNO1D
+INFO: [VRFC 10-311] analyzing module s01_couplers_imp_1W60HW0
+INFO: [VRFC 10-311] analyzing module s02_couplers_imp_8NCF02
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/12f4/hdl/fpga1_top_master_bram_v1_0_M00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_bram_v1_0_M00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/12f4/hdl/fpga1_top_master_bram_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_bram_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_master_bram_0_0/sim/design_1_fpga1_top_master_bram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_master_bram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/bb15/hdl/fpga1_top_master_v1_0_M00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_v1_0_M00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/bb15/hdl/fpga1_top_master_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_master_0_0/sim/design_1_fpga1_top_master_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_master_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/0218/hdl/fpga1_top_slv_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_slv_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/0218/hdl/fpga1_top_slv_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_slv_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_slv_0_0/sim/design_1_fpga1_top_slv_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_slv_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/vio_0/sim/vio_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vio_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_2/sim/blk_mem_gen_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_3/sim/blk_mem_gen_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_4/sim/blk_mem_gen_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/clock_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/horizontal_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module horizontal_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vertical_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vertical_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_control
+INFO: [VRFC 10-311] analyzing module number_offset
+INFO: [VRFC 10-311] analyzing module character_loc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/get_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module get_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/fpga1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/data_matrix_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_matrix_get_index
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/fsm_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_control
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/fsm_control.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/dm_decoder_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dm_decoder_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/sim/design_1_fpga1_top_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_xbar_2/sim/design_1_xbar_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.srcs/part3_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_stimulus
+INFO: [VRFC 10-311] analyzing module part3_tb
+"xvhdl --incr --relax -prj fpga1_top_sys_tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1066.973 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto c2488dde1aa44281aab258144b4a4649 --incr --debug typical --relax --mt 2 -L axi_infrastructure_v1_1_0 -L xil_defaultlib -L axi_vip_v1_1_4 -L blk_mem_gen_v8_4_2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_1_0 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L generic_baseblocks_v2_1_0 -L axi_register_slice_v2_1_18 -L fifo_generator_v13_2_3 -L axi_data_fifo_v2_1_17 -L axi_crossbar_v2_1_19 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fpga1_top_sys_tb_behav xil_defaultlib.fpga1_top_sys_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.fpga1_top_sys_tb in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:26 . Memory (MB): peak = 1066.973 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'part3_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/wait.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/title.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/number.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/access.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/font.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_4.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L xilinx_vip -prj part3_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_axi_mem_intercon_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_1R706YB
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_3HM21E
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_7HNO1D
+INFO: [VRFC 10-311] analyzing module s01_couplers_imp_1W60HW0
+INFO: [VRFC 10-311] analyzing module s02_couplers_imp_8NCF02
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/12f4/hdl/fpga1_top_master_bram_v1_0_M00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_bram_v1_0_M00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/12f4/hdl/fpga1_top_master_bram_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_bram_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_master_bram_0_0/sim/design_1_fpga1_top_master_bram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_master_bram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/bb15/hdl/fpga1_top_master_v1_0_M00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_v1_0_M00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/bb15/hdl/fpga1_top_master_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_master_0_0/sim/design_1_fpga1_top_master_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_master_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/0218/hdl/fpga1_top_slv_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_slv_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/0218/hdl/fpga1_top_slv_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_slv_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_slv_0_0/sim/design_1_fpga1_top_slv_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_slv_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/vio_0/sim/vio_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vio_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_2/sim/blk_mem_gen_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_3/sim/blk_mem_gen_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_4/sim/blk_mem_gen_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/clock_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/horizontal_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module horizontal_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vertical_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vertical_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_control
+INFO: [VRFC 10-311] analyzing module number_offset
+INFO: [VRFC 10-311] analyzing module character_loc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/get_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module get_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/fpga1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/data_matrix_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_matrix_get_index
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/fsm_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_control
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/fsm_control.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/dm_decoder_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dm_decoder_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/sim/design_1_fpga1_top_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_xbar_2/sim/design_1_xbar_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+"xvhdl --incr --relax -prj part3_tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1066.973 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto c2488dde1aa44281aab258144b4a4649 --incr --debug typical --relax --mt 2 -L axi_infrastructure_v1_1_0 -L xil_defaultlib -L axi_vip_v1_1_4 -L blk_mem_gen_v8_4_2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_1_0 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L generic_baseblocks_v2_1_0 -L axi_register_slice_v2_1_18 -L fifo_generator_v13_2_3 -L axi_data_fifo_v2_1_17 -L axi_crossbar_v2_1_19 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot part3_tb_behav xil_defaultlib.part3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 16 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:232]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 15 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:233]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 12 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:234]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 13 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:235]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:237]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:238]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:239]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:241]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:242]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:243]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:245]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:246]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:247]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/4ea5/src/vga_control.v:249]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_1_0.axi_bram_ctrl_funcs
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_0.axi_lite [\axi_lite(c_s_axi_addr_width=12,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_0.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_0.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=10...]
+Compiling architecture design_1_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.design_1_axi_bram_ctrl_0_0 [design_1_axi_bram_ctrl_0_0_defau...]
+Compiling module xil_defaultlib.m00_couplers_imp_1R706YB
+Compiling module xil_defaultlib.m01_couplers_imp_3HM21E
+Compiling module xil_defaultlib.s00_couplers_imp_7HNO1D
+Compiling module xil_defaultlib.s01_couplers_imp_1W60HW0
+Compiling module xil_defaultlib.s02_couplers_imp_8NCF02
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_addr_arbite...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_addr_decode...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_splitter(C_...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_splitter
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_decerr_slav...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_crossbar_sa...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_axi_crossba...
+Compiling module xil_defaultlib.design_1_xbar_2
+Compiling module xil_defaultlib.design_1_axi_mem_intercon_0
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=2,C_AX...
+Compiling module axi_vip_v1_1_4.axi_vip_v1_1_4_top(C_AXI_PROTOCO...
+Compiling module xil_defaultlib.design_1_axi_vip_1_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module xil_defaultlib.fsm_control
+Compiling module xil_defaultlib.clock_div
+Compiling module xil_defaultlib.horizontal_counter
+Compiling module xil_defaultlib.vertical_counter
+Compiling module xil_defaultlib.character_loc
+Compiling module xil_defaultlib.number_offset
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_2
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_3
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_4
+Compiling module xil_defaultlib.vga_control
+Compiling module xil_defaultlib.get_bit
+Compiling module xil_defaultlib.data_matrix_get_index
+Compiling module xil_defaultlib.dm_decoder_top
+Compiling module xil_defaultlib.fpga1_top
+Compiling module xil_defaultlib.design_1_fpga1_top_0_0
+Compiling module xil_defaultlib.fpga1_top_master_v1_0_M00_AXI(C_...
+Compiling module xil_defaultlib.fpga1_top_master_v1_0(C_M00_AXI_...
+Compiling module xil_defaultlib.design_1_fpga1_top_master_0_0
+Compiling module xil_defaultlib.fpga1_top_master_bram_v1_0_M00_A...
+Compiling module xil_defaultlib.fpga1_top_master_bram_v1_0(C_M00...
+Compiling module xil_defaultlib.design_1_fpga1_top_master_bram_0...
+Compiling module xil_defaultlib.fpga1_top_slv_v1_0_S00_AXI_defau...
+Compiling module xil_defaultlib.fpga1_top_slv_v1_0
+Compiling module xil_defaultlib.design_1_fpga1_top_slv_0_0
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture design_1_proc_sys_reset_0_0_arch of entity xil_defaultlib.design_1_proc_sys_reset_0_0 [design_1_proc_sys_reset_0_0_defa...]
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.axi_lite_stimulus_1
+Compiling module xil_defaultlib.part3_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot part3_tb_behav
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 1066.973 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '25' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/UofTCourse/ECE532/Assignment/proj3/proj_p3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "part3_tb_behav -key {Behavioral:sim_1:Functional:part3_tb} -tclbatch {part3_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {E:/UofTCourse/ECE532/Assignment/proj/part3_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_bram_ctrl_0/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/S01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/S02_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/m00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/m00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/m01_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/m01_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/s00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/s00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/s01_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/s01_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/s02_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/s02_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/xbar/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/xbar/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/xbar/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/xbar/S01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/xbar/S02_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_vip_1/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//fpga1_top_master_0/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//fpga1_top_master_bram_0/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//fpga1_top_slv_0/S00_AXI
+Time resolution is 1 ps
+open_wave_config E:/UofTCourse/ECE532/Assignment/proj/part3_tb_behav.wcfg
+source part3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+XilinxAXIVIP: Found at Path: part3_tb.DUT.design_1_i.axi_vip_1.inst
+Block Memory Generator module part3_tb.DUT.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.FR_1.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.FR_2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.num.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.access.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char1.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char3.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char4.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char5.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char6.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char7.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char8.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char9.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1066.973 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'part3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 1066.973 ; gain = 0.000
+run 2000 ns
+run 2000 ns
+run 2000 ns
+current_wave_config {part3_tb_behav.wcfg}
+part3_tb_behav.wcfg
+add_wave {{/part3_tb/DUT/design_1_i/fpga1_top_master_0/m00_axi_awaddr}} {{/part3_tb/DUT/design_1_i/fpga1_top_master_0/m00_axi_awvalid}} {{/part3_tb/DUT/design_1_i/fpga1_top_master_0/m00_axi_awready}} {{/part3_tb/DUT/design_1_i/fpga1_top_master_0/m00_axi_wdata}} {{/part3_tb/DUT/design_1_i/fpga1_top_master_0/m00_axi_wvalid}} {{/part3_tb/DUT/design_1_i/fpga1_top_master_0/m00_axi_wready}} 
+run 2000 ns
+save_wave_config {E:/UofTCourse/ECE532/Assignment/proj/part3_tb_behav.wcfg}
+close_sim
+Executing Axi4 End Of Simulation checks
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar  5 00:20:00 2022...

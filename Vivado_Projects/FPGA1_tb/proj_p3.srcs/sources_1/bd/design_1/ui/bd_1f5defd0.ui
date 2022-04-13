@@ -1,0 +1,49 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port Vsynq_0 -pg 1 -y 400 -defaultsOSRD
+preplace port resetn -pg 1 -y 140 -defaultsOSRD
+preplace port Hsynq_0 -pg 1 -y 380 -defaultsOSRD
+preplace port clk -pg 1 -y 60 -defaultsOSRD
+preplace portBus Green_0 -pg 1 -y 440 -defaultsOSRD
+preplace portBus Red_0 -pg 1 -y 420 -defaultsOSRD
+preplace portBus Blue_0 -pg 1 -y 460 -defaultsOSRD
+preplace inst fpga1_top_master_0 -pg 1 -lvl 2 -y 230 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 160 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -y 220 -defaultsOSRD
+preplace inst axi_vip_1 -pg 1 -lvl 2 -y 70 -defaultsOSRD
+preplace inst fpga1_top_master_bram_0 -pg 1 -lvl 2 -y 560 -defaultsOSRD
+preplace inst fpga1_top_0 -pg 1 -lvl 5 -y 400 -defaultsOSRD
+preplace inst fpga1_top_slv_0 -pg 1 -lvl 4 -y 410 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 3 -y 210 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 4 -y 220 -defaultsOSRD
+preplace netloc fpga1_top_master_0_M00_AXI 1 2 1 730
+preplace netloc axi_mem_intercon_M01_AXI 1 3 1 1100
+preplace netloc fpga1_top_slv_0_fetch_enable 1 4 1 N
+preplace netloc fpga1_top_0_Red 1 5 1 NJ
+preplace netloc axi_vip_1_M_AXI 1 2 1 N
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 4 1 N
+preplace netloc fpga1_top_0_Green 1 5 1 NJ
+preplace netloc fpga1_top_master_bram_0_data_matrix 1 2 3 NJ 560 NJ 560 1450
+preplace netloc fpga1_top_slv_0_doses 1 4 1 N
+preplace netloc axi_mem_intercon_M00_AXI 1 3 1 N
+preplace netloc resetn_1 1 0 1 NJ
+preplace netloc clk_1 1 0 5 20 60 360 140 740 10 1110 500 1420J
+preplace netloc fpga1_top_master_bram_0_M00_AXI 1 2 1 720
+preplace netloc fpga1_top_0_Hsynq 1 5 1 NJ
+preplace netloc fpga1_top_0_Vsynq 1 5 1 NJ
+preplace netloc fpga1_top_0_Blue 1 5 1 NJ
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 4 370 320 750 410 1090 520 1430J
+preplace netloc fpga1_top_0_decode_done 1 1 5 390 450 NJ 450 1060J 530 NJ 530 1780
+preplace netloc fpga1_top_master_bram_0_decode_start 1 2 3 NJ 540 NJ 540 1440
+preplace netloc fpga1_top_slv_0_permission 1 4 1 N
+preplace netloc fpga1_top_slv_0_dm_decode_enable 1 1 4 390 460 NJ 460 1080J 510 1410
+preplace netloc fpga1_top_0_database_addr 1 1 5 380 440 NJ 440 1070J 550 NJ 550 1770
+levelinfo -pg 1 0 190 560 910 1260 1610 1810 -top 0 -bot 660
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_clkrst_cnt":"4"
+}

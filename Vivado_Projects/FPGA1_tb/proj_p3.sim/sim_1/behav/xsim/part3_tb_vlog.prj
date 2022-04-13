@@ -1,0 +1,48 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../proj_p3.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "D:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_axi_vip_1_0/sim/design_1_axi_vip_1_0_pkg.sv" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_axi_vip_1_0/sim/design_1_axi_vip_1_0.sv" \
+
+verilog blk_mem_gen_v8_4_2  --include "../../../../proj_p3.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "D:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../proj_p3.srcs/sources_1/bd/design_1/ipshared/37c2/simulation/blk_mem_gen_v8_4.v" \
+
+verilog xil_defaultlib  --include "../../../../proj_p3.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "D:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/0c76/hdl/fpga1_top_master_bram_v1_0_M00_AXI.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/0c76/hdl/fpga1_top_master_bram_v1_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_master_bram_0_0/sim/design_1_fpga1_top_master_bram_0_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/bb15/hdl/fpga1_top_master_v1_0_M00_AXI.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/bb15/hdl/fpga1_top_master_v1_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_master_0_0/sim/design_1_fpga1_top_master_0_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/d8a9/hdl/fpga1_top_slv_v1_0_S00_AXI.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/d8a9/hdl/fpga1_top_slv_v1_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_slv_0_0/sim/design_1_fpga1_top_slv_0_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/vio_0/sim/vio_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_1/sim/blk_mem_gen_1.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_2/sim/blk_mem_gen_2.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_3/sim/blk_mem_gen_3.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_4/sim/blk_mem_gen_4.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/clock_div.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/horizontal_counter.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vertical_counter.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/counter.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/get_bit.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/fpga1_top.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/data_matrix_decoder.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/fsm_control.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/dm_decoder_top.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/sim/design_1_fpga1_top_0_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_xbar_2/sim/design_1_xbar_2.v" \
+"../../../../proj_p3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+sv xil_defaultlib  --include "../../../../proj_p3.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "D:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../proj_p3.srcs/part3_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

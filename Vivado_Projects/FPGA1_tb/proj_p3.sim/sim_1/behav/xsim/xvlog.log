@@ -1,0 +1,91 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_axi_vip_1_0/sim/design_1_axi_vip_1_0_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_axi_vip_1_0/sim/design_1_axi_vip_1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_axi_vip_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/ipshared/37c2/simulation/blk_mem_gen_v8_4.v" into library blk_mem_gen_v8_4_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_4
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_axi_mem_intercon_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_1R706YB
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_3HM21E
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_7HNO1D
+INFO: [VRFC 10-311] analyzing module s01_couplers_imp_1W60HW0
+INFO: [VRFC 10-311] analyzing module s02_couplers_imp_8NCF02
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/0c76/hdl/fpga1_top_master_bram_v1_0_M00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_bram_v1_0_M00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/0c76/hdl/fpga1_top_master_bram_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_bram_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_master_bram_0_0/sim/design_1_fpga1_top_master_bram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_master_bram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/bb15/hdl/fpga1_top_master_v1_0_M00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_v1_0_M00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/bb15/hdl/fpga1_top_master_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_master_0_0/sim/design_1_fpga1_top_master_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_master_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/d8a9/hdl/fpga1_top_slv_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_slv_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/d8a9/hdl/fpga1_top_slv_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_slv_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_slv_0_0/sim/design_1_fpga1_top_slv_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_slv_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/vio_0/sim/vio_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vio_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_2/sim/blk_mem_gen_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_3/sim/blk_mem_gen_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_4/sim/blk_mem_gen_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/clock_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/horizontal_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module horizontal_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vertical_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vertical_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_control
+INFO: [VRFC 10-311] analyzing module number_offset
+INFO: [VRFC 10-311] analyzing module character_loc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/get_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module get_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/fpga1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/data_matrix_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_matrix_get_index
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/fsm_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/dm_decoder_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dm_decoder_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/sim/design_1_fpga1_top_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_xbar_2/sim/design_1_xbar_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/part3_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_stimulus
+INFO: [VRFC 10-311] analyzing module part3_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

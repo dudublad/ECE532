@@ -1,0 +1,564 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 12 21:32:00 2022
+# Process ID: 8264
+# Current directory: E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4652 E:\UofTCourse\ECE532\project\milestones\fpga1_axi_mb_integration\fpga1_top_tb\proj3\proj_p3.xpr
+# Log file: E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/vivado.log
+# Journal file: E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3'
+INFO: [Project 1-313] Project file moved from 'E:/UofTCourse/ECE532/Assignment/proj3' since last save.
+WARNING: [Project 1-312] File not found as 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj/part3_tb_behav.wcfg'; using path 'E:/UofTCourse/ECE532/Assignment/proj/part3_tb_behav.wcfg' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/ip_repo'; using path 'E:/UofTCourse/ECE532/Assignment/ip_repo' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/project/ip_repo'; using path 'E:/UofTCourse/ECE532/project/ip_repo' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/UofTCourse/ECE532/Assignment/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/UofTCourse/ECE532/project/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_fpga1_top_master_bram_0_0
+
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:19 . Memory (MB): peak = 825.691 ; gain = 225.340
+update_compile_order -fileset sources_1
+open_bd_design {E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:axi_vip:1.1 - axi_vip_1
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:user:fpga1_top_master:1.0 - fpga1_top_master_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:user:fpga1_top:1.0 - fpga1_top_0
+Adding cell -- xilinx.com:user:fpga1_top_master_bram:1.0 - fpga1_top_master_bram_0
+Adding cell -- xilinx.com:user:fpga1_top_slv:1.0 - fpga1_top_slv_0
+Successfully read diagram <design_1> from BD file <E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1073.043 ; gain = 25.086
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:fpga1_top_master_bram:1.0 [get_ips  design_1_fpga1_top_master_bram_0_0] -log ip_upgrade.log
+Upgrading 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_fpga1_top_master_bram_0_0 (fpga1_top_master_bram_v1.0 1.0) from revision 10 to revision 11
+Wrote  : <E:\UofTCourse\ECE532\project\milestones\fpga1_axi_mb_integration\fpga1_top_tb\proj3\proj_p3.srcs\sources_1\bd\design_1\design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_fpga1_top_master_bram_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name fpga1_top_master_bram_v1_0_project -directory E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.tmp/fpga1_top_master_bram_v1_0_project e:/UofTCourse/ECE532/project/ip_repo/fpga1_top_master_bram_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'e:/uoftcourse/ece532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.tmp/fpga1_top_master_bram_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1073.043 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/UofTCourse/ECE532/Assignment/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/UofTCourse/ECE532/project/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/UofTCourse/ECE532/project/ip_repo/fpga1_top_master_bram_1.0/hdl/fpga1_top_master_bram_v1_0_M00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/UofTCourse/ECE532/project/ip_repo/fpga1_top_master_bram_1.0/hdl/fpga1_top_master_bram_v1_0.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1073.043 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'e:/UofTCourse/ECE532/project/ip_repo/fpga1_top_master_bram_1.0/component.xml' ignored by IP packager.
+current_project proj_p3
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/UofTCourse/ECE532/Assignment/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/UofTCourse/ECE532/project/ip_repo'.
+report_ip_status -name ip_status
+current_project fpga1_top_master_bram_v1_0_project
+current_project proj_p3
+upgrade_ip -vlnv xilinx.com:user:fpga1_top_master_bram:1.0 [get_ips  design_1_fpga1_top_master_bram_0_0] -log ip_upgrade.log
+Upgrading 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_fpga1_top_master_bram_0_0 from fpga1_top_master_bram_v1.0 1.0 to fpga1_top_master_bram_v1.0 1.0
+Wrote  : <E:\UofTCourse\ECE532\project\milestones\fpga1_axi_mb_integration\fpga1_top_tb\proj3\proj_p3.srcs\sources_1\bd\design_1\design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_fpga1_top_master_bram_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+WARNING: [BD 41-927] Following properties on pin /fpga1_top_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_clk 
+Wrote  : <E:\UofTCourse\ECE532\project\milestones\fpga1_axi_mb_integration\fpga1_top_tb\proj3\proj_p3.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(12) - Only lower order bits will be connected.
+VHDL Output written to : E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(12) - Only lower order bits will be connected.
+VHDL Output written to : E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vip_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fpga1_top_master_bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fpga1_top_master_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fpga1_top_slv_0 .
+CRITICAL WARNING: [IP_Flow 19-4965] IP vio_0 was packaged with board value 'digilentinc.com:nexys4_ddr:part0:1.1'. Current project's board value is unset. Please update the project settings to match the packaged IP.
+CRITICAL WARNING: [IP_Flow 19-4965] IP blk_mem_gen_0 was packaged with board value 'digilentinc.com:nexys4_ddr:part0:1.1'. Current project's board value is unset. Please update the project settings to match the packaged IP.
+CRITICAL WARNING: [IP_Flow 19-4965] IP blk_mem_gen_1 was packaged with board value 'digilentinc.com:nexys4_ddr:part0:1.1'. Current project's board value is unset. Please update the project settings to match the packaged IP.
+CRITICAL WARNING: [IP_Flow 19-4965] IP blk_mem_gen_2 was packaged with board value 'digilentinc.com:nexys4_ddr:part0:1.1'. Current project's board value is unset. Please update the project settings to match the packaged IP.
+CRITICAL WARNING: [IP_Flow 19-4965] IP blk_mem_gen_3 was packaged with board value 'digilentinc.com:nexys4_ddr:part0:1.1'. Current project's board value is unset. Please update the project settings to match the packaged IP.
+CRITICAL WARNING: [IP_Flow 19-4965] IP blk_mem_gen_4 was packaged with board value 'digilentinc.com:nexys4_ddr:part0:1.1'. Current project's board value is unset. Please update the project settings to match the packaged IP.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fpga1_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+Exporting to file E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1275.125 ; gain = 111.312
+catch { config_ip_cache -export [get_ips -all design_1_fpga1_top_master_bram_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_fpga1_top_master_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_fpga1_top_slv_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_fpga1_top_0_0] }
+export_ip_user_files -of_objects [get_files E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 3 {design_1_fpga1_top_master_0_0_synth_1 design_1_fpga1_top_master_bram_0_0_synth_1 design_1_fpga1_top_slv_0_0_synth_1 design_1_fpga1_top_0_0_synth_1}
+[Tue Apr 12 21:43:14 2022] Launched design_1_fpga1_top_master_0_0_synth_1, design_1_fpga1_top_master_bram_0_0_synth_1, design_1_fpga1_top_slv_0_0_synth_1, design_1_fpga1_top_0_0_synth_1...
+Run output will be captured here:
+design_1_fpga1_top_master_0_0_synth_1: E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.runs/design_1_fpga1_top_master_0_0_synth_1/runme.log
+design_1_fpga1_top_master_bram_0_0_synth_1: E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.runs/design_1_fpga1_top_master_bram_0_0_synth_1/runme.log
+design_1_fpga1_top_slv_0_0_synth_1: E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.runs/design_1_fpga1_top_slv_0_0_synth_1/runme.log
+design_1_fpga1_top_0_0_synth_1: E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.runs/design_1_fpga1_top_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/design_1.bd] -directory E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/sim_scripts -ip_user_files_dir E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files -ipstatic_source_dir E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.cache/compile_simlib/modelsim} {questa=E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.cache/compile_simlib/questa} {riviera=E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.cache/compile_simlib/riviera} {activehdl=E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property core_revision 12 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project fpga1_top_master_bram_v1_0_project
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path e:/UofTCourse/ECE532/project/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'e:/UofTCourse/ECE532/project/ip_repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:fpga1_top_master_bram:1.0 [get_ips  design_1_fpga1_top_master_bram_0_0] -log ip_upgrade.log
+Upgrading 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_fpga1_top_master_bram_0_0 (fpga1_top_master_bram_v1.0 1.0) from revision 11 to revision 12
+Wrote  : <E:\UofTCourse\ECE532\project\milestones\fpga1_axi_mb_integration\fpga1_top_tb\proj3\proj_p3.srcs\sources_1\bd\design_1\design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_fpga1_top_master_bram_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+generate_target Simulation [get_files E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+WARNING: [BD 41-927] Following properties on pin /fpga1_top_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_clk 
+Wrote  : <E:\UofTCourse\ECE532\project\milestones\fpga1_axi_mb_integration\fpga1_top_tb\proj3\proj_p3.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(12) - Only lower order bits will be connected.
+VHDL Output written to : E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(12) - Only lower order bits will be connected.
+VHDL Output written to : E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vip_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fpga1_top_master_bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fpga1_top_master_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fpga1_top_slv_0 .
+CRITICAL WARNING: [IP_Flow 19-4965] IP vio_0 was packaged with board value 'digilentinc.com:nexys4_ddr:part0:1.1'. Current project's board value is unset. Please update the project settings to match the packaged IP.
+CRITICAL WARNING: [IP_Flow 19-4965] IP blk_mem_gen_0 was packaged with board value 'digilentinc.com:nexys4_ddr:part0:1.1'. Current project's board value is unset. Please update the project settings to match the packaged IP.
+CRITICAL WARNING: [IP_Flow 19-4965] IP blk_mem_gen_1 was packaged with board value 'digilentinc.com:nexys4_ddr:part0:1.1'. Current project's board value is unset. Please update the project settings to match the packaged IP.
+CRITICAL WARNING: [IP_Flow 19-4965] IP blk_mem_gen_2 was packaged with board value 'digilentinc.com:nexys4_ddr:part0:1.1'. Current project's board value is unset. Please update the project settings to match the packaged IP.
+CRITICAL WARNING: [IP_Flow 19-4965] IP blk_mem_gen_3 was packaged with board value 'digilentinc.com:nexys4_ddr:part0:1.1'. Current project's board value is unset. Please update the project settings to match the packaged IP.
+CRITICAL WARNING: [IP_Flow 19-4965] IP blk_mem_gen_4 was packaged with board value 'digilentinc.com:nexys4_ddr:part0:1.1'. Current project's board value is unset. Please update the project settings to match the packaged IP.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fpga1_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+Exporting to file E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1659.750 ; gain = 38.609
+export_ip_user_files -of_objects [get_files E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/design_1.bd] -directory E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/sim_scripts -ip_user_files_dir E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files -ipstatic_source_dir E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.cache/compile_simlib/modelsim} {questa=E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.cache/compile_simlib/questa} {riviera=E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.cache/compile_simlib/riviera} {activehdl=E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'part3_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/wait.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/title.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/number.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/access.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/font.coe'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/blk_mem_gen_4.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_4 -L xilinx_vip -prj part3_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_axi_vip_1_0/sim/design_1_axi_vip_1_0_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_axi_vip_1_0/sim/design_1_axi_vip_1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_axi_vip_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/ipshared/37c2/simulation/blk_mem_gen_v8_4.v" into library blk_mem_gen_v8_4_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_4
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_axi_mem_intercon_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_1R706YB
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_3HM21E
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_7HNO1D
+INFO: [VRFC 10-311] analyzing module s01_couplers_imp_1W60HW0
+INFO: [VRFC 10-311] analyzing module s02_couplers_imp_8NCF02
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/0c76/hdl/fpga1_top_master_bram_v1_0_M00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_bram_v1_0_M00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/0c76/hdl/fpga1_top_master_bram_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_bram_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_master_bram_0_0/sim/design_1_fpga1_top_master_bram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_master_bram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/bb15/hdl/fpga1_top_master_v1_0_M00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_v1_0_M00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/bb15/hdl/fpga1_top_master_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_master_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_master_0_0/sim/design_1_fpga1_top_master_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_master_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/d8a9/hdl/fpga1_top_slv_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_slv_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/d8a9/hdl/fpga1_top_slv_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top_slv_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_slv_0_0/sim/design_1_fpga1_top_slv_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_slv_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/vio_0/sim/vio_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vio_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_2/sim/blk_mem_gen_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_3/sim/blk_mem_gen_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/src/blk_mem_gen_4/sim/blk_mem_gen_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/clock_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/horizontal_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module horizontal_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vertical_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vertical_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_control
+INFO: [VRFC 10-311] analyzing module number_offset
+INFO: [VRFC 10-311] analyzing module character_loc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/get_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module get_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/fpga1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/data_matrix_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_matrix_get_index
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/fsm_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/dm_decoder_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dm_decoder_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_fpga1_top_0_0/sim/design_1_fpga1_top_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_fpga1_top_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_xbar_2/sim/design_1_xbar_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.srcs/part3_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_stimulus
+INFO: [VRFC 10-311] analyzing module part3_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj part3_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/sim/design_1_axi_bram_ctrl_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_bram_ctrl_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_proc_sys_reset_0_0'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1659.750 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto c2488dde1aa44281aab258144b4a4649 --incr --debug typical --relax --mt 2 -L axi_infrastructure_v1_1_0 -L xil_defaultlib -L axi_vip_v1_1_4 -L blk_mem_gen_v8_4_2 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_1_0 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L generic_baseblocks_v2_1_0 -L axi_register_slice_v2_1_18 -L fifo_generator_v13_2_3 -L axi_data_fifo_v2_1_17 -L axi_crossbar_v2_1_19 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot part3_tb_behav xil_defaultlib.part3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 16 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:232]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 15 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:233]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 12 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:234]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 13 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:235]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:237]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:238]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:239]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:241]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:242]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:243]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:245]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:246]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:247]
+WARNING: [VRFC 10-3091] actual bit length 19 differs from formal bit length 14 for port 'addra' [E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.ip_user_files/bd/design_1/ipshared/92f8/src/vga_control.v:249]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_1_0.axi_bram_ctrl_funcs
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_0.axi_lite [\axi_lite(c_s_axi_addr_width=12,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_0.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_0.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=10...]
+Compiling architecture design_1_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.design_1_axi_bram_ctrl_0_0 [design_1_axi_bram_ctrl_0_0_defau...]
+Compiling module xil_defaultlib.m00_couplers_imp_1R706YB
+Compiling module xil_defaultlib.m01_couplers_imp_3HM21E
+Compiling module xil_defaultlib.s00_couplers_imp_7HNO1D
+Compiling module xil_defaultlib.s01_couplers_imp_1W60HW0
+Compiling module xil_defaultlib.s02_couplers_imp_8NCF02
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_addr_arbite...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_addr_decode...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_splitter(C_...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_splitter
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_decerr_slav...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_crossbar_sa...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_axi_crossba...
+Compiling module xil_defaultlib.design_1_xbar_2
+Compiling module xil_defaultlib.design_1_axi_mem_intercon_0
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=2,C_AX...
+Compiling module axi_vip_v1_1_4.axi_vip_v1_1_4_top(C_AXI_PROTOCO...
+Compiling module xil_defaultlib.design_1_axi_vip_1_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module xil_defaultlib.fsm_control
+Compiling module xil_defaultlib.clock_div
+Compiling module xil_defaultlib.horizontal_counter
+Compiling module xil_defaultlib.vertical_counter
+Compiling module xil_defaultlib.character_loc
+Compiling module xil_defaultlib.number_offset
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_2
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_3
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_4
+Compiling module xil_defaultlib.vga_control
+Compiling module xil_defaultlib.get_bit
+Compiling module xil_defaultlib.data_matrix_get_index
+Compiling module xil_defaultlib.dm_decoder_top
+Compiling module xil_defaultlib.fpga1_top
+Compiling module xil_defaultlib.design_1_fpga1_top_0_0
+Compiling module xil_defaultlib.fpga1_top_master_v1_0_M00_AXI(C_...
+Compiling module xil_defaultlib.fpga1_top_master_v1_0(C_M00_AXI_...
+Compiling module xil_defaultlib.design_1_fpga1_top_master_0_0
+Compiling module xil_defaultlib.fpga1_top_master_bram_v1_0_M00_A...
+Compiling module xil_defaultlib.fpga1_top_master_bram_v1_0(C_M00...
+Compiling module xil_defaultlib.design_1_fpga1_top_master_bram_0...
+Compiling module xil_defaultlib.fpga1_top_slv_v1_0_S00_AXI_defau...
+Compiling module xil_defaultlib.fpga1_top_slv_v1_0
+Compiling module xil_defaultlib.design_1_fpga1_top_slv_0_0
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture design_1_proc_sys_reset_0_0_arch of entity xil_defaultlib.design_1_proc_sys_reset_0_0 [design_1_proc_sys_reset_0_0_defa...]
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.axi_lite_stimulus_1
+Compiling module xil_defaultlib.part3_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot part3_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim/xsim.dir/part3_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr 12 21:47:14 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:31 . Memory (MB): peak = 1659.750 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '31' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/UofTCourse/ECE532/project/milestones/fpga1_axi_mb_integration/fpga1_top_tb/proj3/proj_p3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "part3_tb_behav -key {Behavioral:sim_1:Functional:part3_tb} -tclbatch {part3_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {E:/UofTCourse/ECE532/Assignment/proj/part3_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_bram_ctrl_0/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/S01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/S02_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/m00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/m00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/m01_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/m01_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/s00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/s00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/s01_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/s01_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/s02_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/s02_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/xbar/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/xbar/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/xbar/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/xbar/S01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_mem_intercon/xbar/S02_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//axi_vip_1/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//fpga1_top_master_0/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//fpga1_top_master_bram_0/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /part3_tb/DUT/design_1_i//fpga1_top_slv_0/S00_AXI
+Time resolution is 1 ps
+open_wave_config E:/UofTCourse/ECE532/Assignment/proj/part3_tb_behav.wcfg
+source part3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+XilinxAXIVIP: Found at Path: part3_tb.DUT.design_1_i.axi_vip_1.inst
+Block Memory Generator module part3_tb.DUT.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.FR_1.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.FR_2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.num.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.access.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char1.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char2.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char3.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char4.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char5.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char6.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char7.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char8.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module part3_tb.DUT.design_1_i.fpga1_top_0.inst.vga_1.name_by_char9.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1705.066 ; gain = 45.316
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'part3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:56 . Memory (MB): peak = 1705.066 ; gain = 45.316
+run 2000 ns
+run 2000 ns
+run 2000 ns
+current_wave_config {part3_tb_behav.wcfg}
+part3_tb_behav.wcfg
+add_wave {{/part3_tb/DUT/design_1_i/fpga1_top_0/inst/database_addr}} 
+close_sim
+Executing Axi4 End Of Simulation checks
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1762.094 ; gain = 0.000
+INFO: [Common 17-344] 'close_sim' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 12 23:22:54 2022...

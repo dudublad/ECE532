@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../proj_p3.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "D:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_axi_vip_1_0/sim/design_1_axi_vip_1_0_pkg.sv" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_axi_vip_1_0/sim/design_1_axi_vip_1_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../proj_p3.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "D:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_xbar_1/sim/design_1_xbar_1.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_mask_axi532_0_0/ipshared/9b75/hdl/myip2_v1_0_M00_AXI.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_mask_axi532_0_0/ipshared/9b75/hdl/myip2_v1_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_mask_axi532_0_0/src/design_1_myip2_0_0/sim/design_1_myip2_0_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_mask_axi532_0_0/ipshared/927d/hdl/myip_v1_0_S00_AXI.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_mask_axi532_0_0/ipshared/927d/hdl/myip_v1_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_mask_axi532_0_0/src/design_1_myip_0_2/sim/design_1_myip_0_2.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/fdd6/sim/design_1.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/fdd6/src/design_1_wrapper.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/fdd6/src/mask532.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/fdd6/src/mask_axi532.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ipshared/fdd6/src/design_1.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/ip/design_1_mask_axi532_0_0/sim/design_1_mask_axi532_0_0.v" \
+"../../../../proj_p3.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../proj_p3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
