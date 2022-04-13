@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# 
+# Start of session at: Tue Mar 29 12:41:10 2022
+# Process ID: 12360
+# Current directory: C:/Users/dongxuen/fpga1+script/fpga_1_323/dm_server/demo_group.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/dongxuen/fpga1+script/fpga_1_323/dm_server/demo_group.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/dongxuen/fpga1+script/fpga_1_323/dm_server/demo_group.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
