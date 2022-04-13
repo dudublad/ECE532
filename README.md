@@ -153,7 +153,11 @@ XilinxSDK
    |   |-- DB_Test15_HW
    |   |-- DB_Test_15_SW
    |   |-- DB_Test_15_SW_bsp
-Docs
+docs
+   |-- Final_Demo_Presentation.pdf
+   |-- Final_Proposal_Presentation.pdf
+   |-- Final_Proposal_Writeup.pdf
+   |-- Mid_Project_Presentation.pdf
 ```
 
 ## Authors
