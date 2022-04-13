@@ -1,0 +1,786 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Wed Mar  9 17:42:25 2022
+# Process ID: 8824
+# Current directory: C:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.runs/design_1_xbar_0_synth_1
+# Command line: vivado.exe -log design_1_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+# Log file: C:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.runs/design_1_xbar_0_synth_1/design_1_xbar_0.vds
+# Journal file: C:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.runs/design_1_xbar_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_xbar_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/dongxuen/fpga_1/fpga_1/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top design_1_xbar_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7232 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 487.320 ; gain = 107.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 6 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 7 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 3 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 448'b0000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000001110000000000000000000000000000000000000000000000000000000100000011100000000000000000000000000000000000000000000000000000010000000110000000000000000000000000000000000000000000000000000001000001001000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 224'b00000000000000000000000000001101000000000000000000000000000110110000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_S_AXI_BASE_ID bound to: 192'b000000000000000000000000000001010000000000000000000000000000010000000000000000000000000000000011000000000000000000000000000000100000000000000000000000000000000100000000000000000000000000000000 
+	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 224'b00000000000000000000000000011101000000000000000000000000000111010000000000000000000000000001110100000000000000000000000000011101000000000000000000000000000111010000000000000000000000000001110100000000000000000000000000011101 
+	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 224'b00000000000000000000000000111111000000000000000000000000001111110000000000000000000000000011111100000000000000000000000000111111000000000000000000000000001111110000000000000000000000000011111100000000000000000000000000111111 
+	Parameter C_R_REGISTER bound to: 1 - type: integer 
+	Parameter C_S_AXI_SINGLE_THREAD bound to: 192'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 192'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 192'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_WRITE_ISSUING bound to: 224'b00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_ISSUING bound to: 224'b00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_SECURE bound to: 224'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_CONNECTIVITY_MODE bound to: 0 - type: integer 
+	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
+	Parameter P_S_AXI_BASE_ID bound to: 384'b000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_S_AXI_HIGH_ID bound to: 384'b000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_AXILITE_SIZE bound to: 3'b010 
+	Parameter P_INCR bound to: 2'b01 
+	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 7'b1111111 
+	Parameter P_M_AXI_SUPPORTS_READ bound to: 7'b1111111 
+	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 6'b011101 
+	Parameter P_S_AXI_SUPPORTS_READ bound to: 6'b111111 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter P_M_AXI_ERR_MODE bound to: 224'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_LEN bound to: 8 - type: integer 
+	Parameter P_LOCK bound to: 1 - type: integer 
+	Parameter P_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 6 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 7 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 3 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 448'b0000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000001110000000000000000000000000000000000000000000000000000000100000011100000000000000000000000000000000000000000000000000000010000000110000000000000000000000000000000000000000000000000000001000001001000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 448'b0000000000000000000000000000000011000000000000000001111111111111000000000000000000000000000000001000011111111111111111111111111100000000000000000000000000000000010001001010000011111111111111110000000000000000000000000000000001000001110000001111111111111111000000000000000000000000000000000100000011100000111111111111111100000000000000000000000000000000010000000110000011111111111111110000000000000000000000000000000001000001001000001111111111111111 
+	Parameter C_S_AXI_BASE_ID bound to: 384'b000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_S_AXI_HIGH_ID bound to: 384'b000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 6'b011101 
+	Parameter C_S_AXI_SUPPORTS_READ bound to: 6'b111111 
+	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 7'b1111111 
+	Parameter C_M_AXI_SUPPORTS_READ bound to: 7'b1111111 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_SECURE bound to: 224'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_ERR_MODE bound to: 224'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_R_REGISTER bound to: 1 - type: integer 
+	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE bound to: 8 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 3 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 3 - type: integer 
+	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 3 - type: integer 
+	Parameter P_AXI_AUSER_WIDTH bound to: 1 - type: integer 
+	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
+	Parameter P_AMESG_WIDTH bound to: 66 - type: integer 
+	Parameter P_BMESG_WIDTH bound to: 3 - type: integer 
+	Parameter P_RMESG_WIDTH bound to: 68 - type: integer 
+	Parameter P_WMESG_WIDTH bound to: 75 - type: integer 
+	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+	Parameter P_M_SECURE_MASK bound to: 7'b0000000 
+	Parameter P_M_AXILITE_MASK bound to: 7'b0000000 
+	Parameter P_FIXED bound to: 2'b00 
+	Parameter P_BYPASS bound to: 0 - type: integer 
+	Parameter P_LIGHTWT bound to: 7 - type: integer 
+	Parameter P_FULLY_REG bound to: 1 - type: integer 
+	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
+	Parameter P_DECERR bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_NUM_TARGETS bound to: 7 - type: integer 
+	Parameter C_NUM_TARGETS_LOG bound to: 3 - type: integer 
+	Parameter C_NUM_RANGES bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ENC bound to: 1 - type: integer 
+	Parameter C_TARGET_HOT bound to: 1 - type: integer 
+	Parameter C_REGION_ENC bound to: 1 - type: integer 
+	Parameter C_BASE_ADDR bound to: 448'b0000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000010001001010000000000000000000000000000000000000000000000000000001000001110000000000000000000000000000000000000000000000000000000100000011100000000000000000000000000000000000000000000000000000010000000110000000000000000000000000000000000000000000000000000001000001001000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 448'b0000000000000000000000000000000011000000000000000001111111111111000000000000000000000000000000001000011111111111111111111111111100000000000000000000000000000000010001001010000011111111111111110000000000000000000000000000000001000001110000001111111111111111000000000000000000000000000000000100000011100000111111111111111100000000000000000000000000000000010000000110000011111111111111110000000000000000000000000000000001000001001000001111111111111111 
+	Parameter C_TARGET_QUAL bound to: 8'b01111111 
+	Parameter C_RESOLUTION bound to: 2 - type: integer 
+	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000010010000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+	Parameter C_FAMILY bound to: rtl - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000000110000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000001110000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000011100000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (2#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010001001010000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (2#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b100000000000000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' (2#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b110000000000000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' (2#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_addr_decoder' (3#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 6 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (4#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 6 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 75 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (4#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_RESP bound to: 3 - type: integer 
+	Parameter P_WRITE_IDLE bound to: 2'b00 
+	Parameter P_WRITE_DATA bound to: 2'b01 
+	Parameter P_WRITE_RESP bound to: 2'b10 
+	Parameter P_READ_IDLE bound to: 1'b0 
+	Parameter P_READ_DATA bound to: 1'b1 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3633]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_decerr_slave' (5#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_addr_arbiter_sasd' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_NUM_S bound to: 6 - type: integer 
+	Parameter C_NUM_S_LOG bound to: 3 - type: integer 
+	Parameter C_AMESG_WIDTH bound to: 66 - type: integer 
+	Parameter C_GRANT_ENC bound to: 1 - type: integer 
+	Parameter C_ARB_PRIORITY bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_PRIO_MASK bound to: 6'b000000 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 6 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 66 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (5#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_addr_arbiter_sasd' (6#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_splitter' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+	Parameter C_NUM_M bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_splitter' (7#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_19_splitter__parameterized0' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+	Parameter C_NUM_M bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_splitter__parameterized0' (7#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 8 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (7#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 8 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 68 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (7#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_DATA_WIDTH bound to: 68 - type: integer 
+	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_18_axic_register_slice' (8#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/cc23/hdl/axi_register_slice_v2_1_vl_rfs.v:409]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized4' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 8 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized4' (8#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_crossbar_sasd' (9#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_19_axi_crossbar' (10#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (11#1) [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:60]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_addr_decoder has unconnected port ADDR[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[17]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[16]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[15]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[14]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[13]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[12]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[11]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[10]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[9]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[8]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_AWID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[17]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[16]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[15]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[14]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[13]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[12]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[11]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[10]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[9]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[8]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_WID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[17]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[16]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[15]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[14]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[13]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[12]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[11]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[10]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[9]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[8]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port S_AXI_ARID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[20]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[19]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[18]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[17]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[16]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[15]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[14]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[13]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[12]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[11]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[10]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[9]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[8]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[20]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[19]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[18]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[17]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[16]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[15]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[14]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[13]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[12]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[11]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[10]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[9]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[8]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_crossbar_sasd has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awid[17]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_19_axi_crossbar has unconnected port s_axi_awid[16]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 645.309 ; gain = 265.195
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 645.309 ; gain = 265.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 645.309 ; gain = 265.195
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 904.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 904.406 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 906.250 ; gain = 1.844
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 906.250 ; gain = 526.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 906.250 ; gain = 526.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.runs/design_1_xbar_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 906.250 ; gain = 526.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "f_mux_return5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return4" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return4" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'gen_axi.s_axi_rvalid_i_reg' into 'gen_axi.read_cs_reg[0:0]' [c:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.srcs/sources_1/bd/design_1/ipshared/6c9d/hdl/axi_crossbar_v2_1_vl_rfs.v:3669]
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.write_cs_reg' in module 'axi_crossbar_v2_1_19_decerr_slave'
+INFO: [Synth 8-5546] ROM "gen_axi.read_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gen_axi.s_axi_rlast_i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gen_axi.s_axi_rlast_i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "f_mux_return5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return4" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return6" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return4" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return6" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return4" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return6" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return4" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "f_mux_return1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.write_cs_reg' using encoding 'one-hot' in module 'axi_crossbar_v2_1_19_decerr_slave'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 906.250 ; gain = 526.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               68 Bit    Registers := 2     
+	               66 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 5     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     68 Bit        Muxes := 2     
+	   2 Input     66 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 104   
+	   3 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_crossbar_v2_1_19_addr_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+Module generic_baseblocks_v2_1_0_mux_enc 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+Module generic_baseblocks_v2_1_0_mux_enc__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+Module axi_crossbar_v2_1_19_decerr_slave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 11    
+Module generic_baseblocks_v2_1_0_mux_enc__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+Module axi_crossbar_v2_1_19_addr_arbiter_sasd 
+Detailed RTL Component Info : 
++---Registers : 
+	               66 Bit    Registers := 1     
+	                6 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     66 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 7     
+Module axi_crossbar_v2_1_19_splitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module axi_crossbar_v2_1_19_splitter__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module generic_baseblocks_v2_1_0_mux_enc__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module generic_baseblocks_v2_1_0_mux_enc__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module axi_register_slice_v2_1_18_axic_register_slice 
+Detailed RTL Component Info : 
++---Registers : 
+	               68 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     68 Bit        Muxes := 2     
+Module generic_baseblocks_v2_1_0_mux_enc__parameterized4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module axi_crossbar_v2_1_19_crossbar_sasd 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "gen_axi.s_axi_rlast_i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gen_axi.read_cs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_awvalid_reg_reg[1]' (FDR) to 'inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_awvalid_reg_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_sasd.crossbar_sasd_0/addr_arbiter_inst/s_awvalid_reg_reg[5] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 906.250 ; gain = 526.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 906.250 ; gain = 526.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 950.820 ; gain = 570.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 959.844 ; gain = 579.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 959.844 ; gain = 579.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 959.844 ; gain = 579.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 959.844 ; gain = 579.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 959.844 ; gain = 579.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 959.844 ; gain = 579.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 959.844 ; gain = 579.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    68|
+|3     |LUT3 |    94|
+|4     |LUT4 |   210|
+|5     |LUT5 |   187|
+|6     |LUT6 |   388|
+|7     |FDRE |   262|
+|8     |FDSE |     2|
++------+-----+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-----------------------------------------------+------+
+|      |Instance                             |Module                                         |Cells |
++------+-------------------------------------+-----------------------------------------------+------+
+|1     |top                                  |                                               |  1213|
+|2     |  inst                               |axi_crossbar_v2_1_19_axi_crossbar              |  1213|
+|3     |    \gen_sasd.crossbar_sasd_0        |axi_crossbar_v2_1_19_crossbar_sasd             |  1213|
+|4     |      addr_arbiter_inst              |axi_crossbar_v2_1_19_addr_arbiter_sasd         |   703|
+|5     |      \gen_decerr.decerr_slave_inst  |axi_crossbar_v2_1_19_decerr_slave              |    56|
+|6     |      reg_slice_r                    |axi_register_slice_v2_1_18_axic_register_slice |   416|
+|7     |      splitter_ar                    |axi_crossbar_v2_1_19_splitter__parameterized0  |     6|
+|8     |      splitter_aw                    |axi_crossbar_v2_1_19_splitter                  |    14|
++------+-------------------------------------+-----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 959.844 ; gain = 579.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 461 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 959.844 ; gain = 318.789
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 959.844 ; gain = 579.730
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 959.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+112 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 959.844 ; gain = 586.594
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 959.844 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_0, cache-ID = 10b9c4ab506841ce
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 959.844 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dongxuen/fpga_1/fpga_1/dm_server/demo_group.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_xbar_0_utilization_synth.rpt -pb design_1_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  9 17:43:30 2022...
