@@ -129,7 +129,17 @@ Vivado_Projects
    |   |   |-- fpga1_top_slv_1.0
    |-- FPGA2
    |   |-- bitstreams
+   |   |   |-- DB_Test7_DDR_4.bit
+   |   |   |-- T5_wrapper.hdf
    |   |-- DB_Server_Final
+   |   |   |-- DB_Test7_DDR_4.cache
+   |   |   |-- DB_Test7_DDR_4.hw
+   |   |   |-- DB_Test7_DDR_4.ip_user_files
+   |   |   |-- DB_Test7_DDR_4.ipdefs
+   |   |   |-- DB_Test7_DDR_4.srcs
+   |   |   |-- DB_Test7_DDR_4.xpr
+   |   |-- ip_repo
+   |   |   |--DB_Parsing_IP_v1_0
    |-- FPGA1_tb
    |   |-- proj_p3.xpr
 XilinxSDK
