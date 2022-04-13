@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr 13 14:38:23 2022
+# Process ID: 18024
+# Current directory: C:/Users/musta/Documents/ECE532/DB_IP/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18852 C:\Users\musta\Documents\ECE532\DB_IP\ip_repo\edit_DB_Full1_v1_0.xpr
+# Log file: C:/Users/musta/Documents/ECE532/DB_IP/ip_repo/vivado.log
+# Journal file: C:/Users/musta/Documents/ECE532/DB_IP/ip_repo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/musta/Documents/ECE532/DB_IP/ip_repo/edit_DB_Full1_v1_0.xpr
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/musta/Documents/ECE532/DB_IP/ip_repo/DB_Full1_1.0/hdl/DB_Full1_v1_0_M00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/musta/Documents/ECE532/DB_IP/ip_repo/DB_Full1_1.0/hdl/DB_Full1_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/musta/Documents/ECE532/DB_IP/ip_repo/DB_Full1_1.0/hdl/DB_Full1_v1_0.v:]
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/musta/Documents/ECE532/DB_IP/ip_repo/DB_Full1_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/musta/Documents/ECE532/Assignment1/ECE532_Assignment_1_Simulating_AXI'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:mask_axi532_part2:1.0'. The one found in IP location 'c:/Users/musta/Documents/ECE532/Assignment1/ECE532_Assignment_1_Simulating_AXI/Part_2_Implementation/Part_2_Implementation.srcs' will take precedence over the same IP in location c:/Users/musta/Documents/ECE532/Assignment1/ECE532_Assignment_1_Simulating_AXI/Part_2_Implementation/Part_2_Implementation.srcs/Part_2_Implementation
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:mask_axi532:1.0'. The one found in IP location 'c:/Users/musta/Documents/ECE532/Assignment1/ECE532_Assignment_1_Simulating_AXI/Part_2_Implementation/Part_2_Implementation.srcs/mask_axi532_1' will take precedence over the same IP in location c:/Users/musta/Documents/ECE532/Assignment1/ECE532_Assignment_1_Simulating_AXI/ip_repo/mask_axi532_1.0
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 868.512 ; gain = 183.301
+update_compile_order -fileset sources_1
+archive_project C:/Users/musta/Documents/ECE532/DB_IP/DB_Parsing_IP_v1_0.xpr.zip -temp_dir C:/Users/musta/Documents/ECE532/DB_IP/ip_repo/.Xil/Vivado-18024-DESKTOP-38OJ4KK -force -exclude_run_results
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/musta/Documents/ECE532/DB_IP/ip_repo/.Xil/Vivado-18024-DESKTOP-38OJ4KK' for archiving project
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/musta/Documents/ECE532/DB_IP/ip_repo/DB_Full1_1.0/hdl/DB_Full1_v1_0_M00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/musta/Documents/ECE532/DB_IP/ip_repo/DB_Full1_1.0/hdl/DB_Full1_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/musta/Documents/ECE532/DB_IP/ip_repo/DB_Full1_1.0/hdl/DB_Full1_v1_0.v:]
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/musta/Documents/ECE532/DB_IP/ip_repo/.Xil/Vivado-18024-DESKTOP-38OJ4KK/PrjAr/_X_'.
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
