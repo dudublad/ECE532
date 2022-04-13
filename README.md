@@ -54,3 +54,34 @@ Suppose that you are at machine X for the FPGA client and machine Y for the FPGA
 (9)	Choose Run -> Run Configurations -> Run
 
 (10)	If you are physically at the lab, switch the monitor to VGA mode, otherwise use a webcam test website to view what is displayed on VGA.
+
+### FPGA 2 (Server)
+
+(1)	Download all the files in the [FPGA2](/XilinxSDK/FPGA2) directory
+
+(2)	Open all the three projects in that directory Xilinx SDK 2018.3
+
+(3)	Open the file [setup.h](/XilinxSDK/FPGA2/DB_Test_15_SW/src/)
+
+&nbsp;&nbsp;&nbsp;&nbsp; a)	Modify the definition `MACHINE_NUM` to reflect the number of your station in the FPGA-Net
+
+&nbsp;&nbsp;&nbsp;&nbsp; b)	Modify the definition `MACHINE_NUM_HEX` to reflect the number of your station in hex format. Number should just match the decimal version. E.g., if your machine number is 11, set `MACHINE_NUM_HEX` to 0x11.
+
+(4)	Choose Xilinx -> Program FPGA -> Program
+
+&nbsp;&nbsp;&nbsp;&nbsp; a)	Program the FPGA with the bitstream [T5_wrapper.hdf](/XilinxSDK/FPGA2/DB_Test15_HW/)
+
+(5)	To enable logs, go to SDK terminal -> the green “+” -> connect to COM6 at Baud Rate 9600
+
+(6)	Choose Run -> Run Configurations -> Run
+
+### PC
+(1)	Go to the Scripts folder and make sure there is a folder called dm_images inside
+
+(2)	Right click on the file [definitions.py](/Scripts/definitions.py) -> Edit with IDLE -> Edit with IDLE 3.7 (64-bit)
+
+(3)	Change the first line to `fpga2_ip_addr = "1.1.Y.2"`
+
+(4)	Close IDLE and double click on the [main_script.py](/Scripts/main_script.py) file
+
+(5)	Follow the instructions shown on the terminal
