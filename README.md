@@ -136,3 +136,11 @@ XilinxSDK
    |   |-- DB_Test_15_SW_bsp
 ```
 
+## Authors
+[Mustafa Kanchwala](https://github.com/mustafakanchwala)
+
+[Guoxian Wu](https://github.com/flystandard1)
+
+[Eduardo Stecca Ortenblad](https://github.com/dudublad)
+
+[Xuening Dong](https://github.com/XueningD65)
