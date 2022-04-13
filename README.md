@@ -153,6 +153,7 @@ XilinxSDK
    |   |-- DB_Test15_HW
    |   |-- DB_Test_15_SW
    |   |-- DB_Test_15_SW_bsp
+Docs
 ```
 
 ## Authors
