@@ -103,17 +103,18 @@ Enter `ipconfig` to get the IP address, especially the station number in the com
 .gitignore
 README.md
 Scripts
-   |-- TLV_Decode.py
-   |-- TLV_Encode.py
-   |-- CSV_convert.py
-   |-- database_cheatsheet.csv
-   |-- definitions.py
-   |-- main_script.py
-   |-- dm_images
-   |   |-- dm_0.png
+   |-- RequestTLV.py: Classes used to encode/decode TLV requests and user data
+   |-- TLV_Decode.py: TLV decoding example/test in Python
+   |-- TLV_Encode.py: TLV encoding example/test in Python
+   |-- CSV_convert.py: Take .csv file as an input to preload users
+   |-- database_cheatsheet.csv: Example .csv format
+   |-- definitions.py: Database IP address setup
+   |-- main_script.py: Main user interface
+   |-- dm_images: Folder for storing data matrix images
+   |   |-- dm_0.png: Example image with naming convention: “dm_”+UID+”.png”
 Vivado_Projects
-   |-- FPGA_1
-   |   |-- dm_server
+   |-- FPGA_1: FPGA client in the project
+   |   |-- dm_server: hardware block design file for the FPGA client (server in terms of receiving data matrix)
    |   |   |-- bitstream
    |   |   |   |-- design_1_wrapper.bit
    |   |   |   |-- design_1_wrapper.ltx
@@ -123,10 +124,15 @@ Vivado_Projects
    |   |   |-- demo_group.srcs
    |   |   |-- demo_group.xpr
    |   |-- ip_repo
-   |   |   |-- fpga1_top_1.0
-   |   |   |-- fpga1_top_master_1.0
-   |   |   |-- fpga1_top_master_bram_1.0
-   |   |   |-- fpga1_top_slv_1.0
+   |   |   |-- fpga1_top_1.0: integration of two custom IPs: VGA display and Data Matrix Decoder
+   |   |   |   | - src:
+   |   |   |   |   | - data_matrix_decoder.v: Custom IP of Data Matrix Decoder
+   |   |   |   |   | - vga_control.v: Custom IP of VGA display
+   |   |   |   |   | - fsm_control.v: FSM of FPGA 1
+   |   |   |-- fpga1_top_master_1.0: Data and control signals transferred from Microblaze to hardware
+   |   |   |-- fpga1_top_master_bram_1.0: BRAM controller in FPGA 1 (store Data Matrix)
+   |   |   |-- fpga1_top_slv_1.0: Data and control signals transferred from hardware to Microblaze
+
    |-- FPGA2
    |   |-- bitstreams
    |   |   |-- DB_Test7_DDR_4.bit
@@ -140,24 +146,35 @@ Vivado_Projects
    |   |   |-- DB_Test7_DDR_4.xpr
    |   |-- ip_repo
    |   |   |--DB_Parsing_IP_v1_0
-   |-- FPGA1_tb
+   |-- FPGA1_tb: System level testbench of FPGA1
    |   |-- proj_p3.xpr
 XilinxSDK
    |-- FPGA1
    |   |-- demo_group.sdk
    |   |   |-- design_1_wrapper_hw_platform_0
-   |   |   |-- dm_server
+   |   |   |-- dm_server: containing TCP server & client with communication encoded by TLV
    |   |   |-- dm_server_bsp
    |   |   |-- design_1_wrapper.hdf
    |-- FPGA2
-   |   |-- DB_Test15_HW
-   |   |-- DB_Test_15_SW
-   |   |-- DB_Test_15_SW_bsp
+   |   |-- DB_Test15_HW: Xilinx SDK Hardware project for FPGA 2 
+   |   |-- DB_Test_15_SW: Xilinx SDK Software project for FPGA 2
+   |   |   |-- setup.h: Define server’s station number and port
+   |   |   |-- server.c: Main server functionality. This gets called directly from main.c
+   |   |   |-- server_helper.h: Helper function for the server. Gets called by server.c
+   |   |   |-- server_helper.c
+   |   |   |-- request_handler.h: Handles incoming TLV requests appropriately
+   |   |   |-- request_handler.c
+   |   |   |-- requestTLV.h: Encoding/decoding of TLV requests and user data
+   |   |   |-- requestTLV.c
+   |   |   |-- easytlv.h: EasyTLV library header [2]
+   |   |   |-- easytlv.c: EasyTLV library source code [2]
+   |   |-- DB_Test_15_SW_bsp: Xilinx SDK Software bsp project for FPGA 2 
 docs
    |-- Final_Demo_Presentation.pdf
    |-- Final_Proposal_Presentation.pdf
    |-- Final_Proposal_Writeup.pdf
    |-- Mid_Project_Presentation.pdf
+
 ```
 
 ## Authors
